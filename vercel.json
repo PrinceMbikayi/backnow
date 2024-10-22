@@ -1,9 +1,11 @@
 {
-    "rewrites": [{ "source": "/(.*)", "destination": "/index.js" }],
-    "builds": [
-      {
-        "src": "./index.js",
-        "use": "@vercel/node"
-      }
-    ]
-  }
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api" }
+  ],
+  "builds": [
+    {
+      "src": "./index.js",
+      "use": "@vercel/node"
+    }
+  ]
+}
